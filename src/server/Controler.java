@@ -1,5 +1,5 @@
 package server;
 
-public class conroler {
+public class Controler {
 
 }

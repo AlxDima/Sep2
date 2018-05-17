@@ -1,5 +1,5 @@
 package server;
 
-public class view {
+public class View {
 
 }
