@@ -19,9 +19,9 @@ public class Log {
 
             stmt = c.createStatement();
             String sql = "CREATE TABLE \"Game\".logid " +
-                         "(LOG_ID INT PRIMARY KEY     NOT NULL," +
-                         " Date           TIMESTAMP    NOT NULL, " +
-                         " File_Name          TEXT    NOT NULL)";
+                         "(Date       TIMESTAMP PRIMARY KEY     NOT NULL," +
+                         " LOG_ID     INT    NOT NULL, " +
+                         " File_Name  TEXT    NOT NULL)";
             stmt.executeUpdate(sql);
             stmt.close();
             c.close();
