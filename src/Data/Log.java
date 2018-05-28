@@ -1,4 +1,4 @@
-package Create;
+package Data;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -18,7 +18,7 @@ public class Log {
             System.out.println("Database open ok");
 
             stmt = c.createStatement();
-            String sql = "CREATE TABLE \"Game\".log " +
+            String sql = "CREATE TABLE \"Game\".logid " +
                          "(LOG_ID INT PRIMARY KEY     NOT NULL," +
                          " Date           TIMESTAMP    NOT NULL, " +
                          " File_Name          TEXT    NOT NULL)";
