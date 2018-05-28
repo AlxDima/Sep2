@@ -18,7 +18,7 @@ public class Log_id {
             System.out.println("Database open ok");
 
             stmt = c.createStatement();
-            String sql = "CREATE TABLE \"Game\".user " +
+            String sql = "CREATE TABLE \"Game\".logid " +
                          "(LOG_ID INT PRIMARY KEY     NOT NULL," +
                          " CHAT_TYPE           TEXT    NOT NULL, " +
                          " ALIAS          TEXT    NOT NULL, " +
