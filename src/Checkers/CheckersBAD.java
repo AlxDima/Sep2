@@ -1,15 +1,15 @@
 package Checkers;
 
 /*
-This applet lets two uses play checkers against each other.
-Red always starts the game.  If a player can jump an opponent's
-piece, then the player must jump.  When a plyer can make no more
-moves, the game ends.
-This file defines four classes: the main applet class, Checkers;
-CheckersCanvas, CheckersMove, and CheckersData.
-(This is not very good style; the other classes really should be
-nested classes inside the Checkers class.)
-*/
+ This applet lets two uses play checkers against each other.
+ Red always starts the game.  If a player can jump an opponent's
+ piece, then the player must jump.  When a plyer can make no more
+ moves, the game ends.
+ This file defines four classes: the main applet class, Checkers;
+ CheckersCanvas, CheckersMove, and CheckersData.
+ (This is not very good style; the other classes really should be
+ nested classes inside the Checkers class.)
+ */
 
 import java.awt.*;
 import java.awt.event.*;
