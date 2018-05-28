@@ -18,7 +18,7 @@ public class Log {
             System.out.println("Database open ok");
 
             stmt = c.createStatement();
-            String sql = "CREATE TABLE \"Game\".logid " +
+            String sql = "CREATE TABLE \"Game\".log " +
                          "(Date       TIMESTAMP PRIMARY KEY     NOT NULL," +
                          " LOG_ID     INT    NOT NULL, " +
                          " File_Name  TEXT    NOT NULL)";
