@@ -1,11 +1,11 @@
 package Checkers;
 
-public enum PieceT {
+public enum PieceType {
     RED(1), WHITE(-1);
 
     final int moveDir;
 
-    PieceT(int moveDir) {
+    PieceType(int moveDir) {
         this.moveDir = moveDir;
     }
 }
