@@ -24,8 +24,7 @@ public class CheckersBAD extends Applet {
 	 * used in the applet are defined as instance variables in the
 	 * CheckersCanvas class. The applet class gives them their visual appearance
 	 * and sets their size and positions.
-	 * 
-	 * test commit
+	 * dsdsdsdsdsd
 	 * 
 	 */
 
