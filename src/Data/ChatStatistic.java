@@ -31,6 +31,6 @@ public class ChatStatistic {
             System.err.println( e.getClass().getName()+": "+ e.getMessage() );
             System.exit(0);
           }
-          System.out.println("Database table ok");
+          System.out.println("Database created");
         }
    }
