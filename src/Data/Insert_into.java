@@ -19,8 +19,10 @@ public class Insert_into {
             System.out.println("Database open ok");
 
             stmt = c.createStatement();
-            String sql = "UPDATE \"Game\".staff set salary = 12500.00 where staffno = 'SL41';";
-            stmt.executeUpdate("INSERT INTO Customers " + "VALUES (1001, 'Simpson', 'Mr.', 'Springfield', 2001)");
+            String sql = "INSERT INTO \"Game\".user " + "VALUES (1, 'Alex D', 'Popeye');" +
+                         "INSERT INTO \"Game\".user " + "VALUES (2, 'Alex Z', 'Pluto')" + 
+                         "INSERT INTO \"Game\".user " + "VALUES (3, 'Mihai B ', 'MickeyMouse')";
+            
             stmt.executeUpdate(sql);
 
         
