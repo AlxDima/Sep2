@@ -34,7 +34,7 @@ public class CheckersBAD extends Applet {
 	public void init() {
 	   setSize(500, 500);
       setResizable(false);
-		setLayout(null); // I will do the layout myself.
+		setLayout(null); // I will do the layout myself555.
 
 		setBackground(new Color(0, 150, 0)); // Dark green background.
 
