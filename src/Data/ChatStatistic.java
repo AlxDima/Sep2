@@ -22,8 +22,7 @@ public class ChatStatistic {
             String sql = "CREATE TABLE \"Game\".chatstat " +
                          "(UserId       INT PRIMARY KEY     NOT NULL," +
                          " ChatId       INT      NOT NULL," +
-                         " DailyLog       DATE    NOT NULL, " +
-                         " MonthlyLog     DATE   NOT NULL)";
+                         " DailyLog       DATE    NOT NULL)";
             stmt.executeUpdate(sql);
             stmt.close();
             c.close();
