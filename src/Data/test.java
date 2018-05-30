@@ -145,8 +145,8 @@ public class test {
         }
         rs.close();
 
-        dropTable(connection, "dotcom");
-        createTable(connection, "dotcom (rank int primary key, name varchar(5000), type varchar(5000), subtype varchar(5000), subsubtype varchar(5000));");
+        dropTable(connection, "gamestat");
+        createTable(connection, "gamestat (UserId int primary key, WinGamesNo varchar(5000), type varchar(5000), subtype varchar(5000), subsubtype varchar(5000));");
         int rows = insertIntoTableFromFile(connection, "dotcom", "src/TopURLs");
         System.out.println(rows + " rows inserted.");
     }
