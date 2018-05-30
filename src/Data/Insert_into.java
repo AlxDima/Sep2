@@ -19,11 +19,10 @@ public class Insert_into {
             System.out.println("Database open ok");
 
             stmt = c.createStatement();
-            String sql = "INSERT INTO \"Game\".user " + "VALUES (1, 'Alex D', 'Popeye');" +
-                         "INSERT INTO \"Game\".user " + "VALUES (2, 'Alex Z', 'Pluto')" + 
-                         "INSERT INTO \"Game\".user " + "VALUES (3, 'Mihai B ', 'MickeyMouse')";
-            
-            stmt.executeUpdate(sql);
+            String sql1 = "INSERT INTO \"Game\".user " + "VALUES (1, 'Alex D', 'Popeye')";
+            String sql2 = "INSERT INTO \"Game\".user " + "VALUES (2, 'Alex z', 'Pluto')" ;
+            String sql3 = "INSERT INTO \"Game\".user " + "VALUES (3, 'Mihai B', 'MickeyMouse')" ;
+            stmt.executeUpdate(sql3);
 
         
       
