@@ -1,18 +1,19 @@
-import javafx.application.Application;
 import javafx.scene.Group;
 import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
-import javafx.stage.Stage;
 
-public class CheckersMain extends Application {
-
-    
+public static final int TILE_SIZE = 50;
+    public static final int WIDTH = 8;
+    public static final int HEIGHT = 8;
 
     private Tile[][] board = new Tile[WIDTH][HEIGHT];
 
     private Group tileGroup = new Group();
     private Group pieceGroup = new Group();
+
+    
+    
+    
 
     private Parent createContent() {
         Pane root = new Pane();
@@ -27,13 +28,18 @@ public class CheckersMain extends Application {
                 tileGroup.getChildren().add(tile);
 
                 Piece piece = null;
+               
+                
+                
 
                 if (y <= 2 && (x + y) % 2 != 0) {
                     piece = makePiece(PieceType.RED, x, y);
+                    
                 }
 
                 if (y >= 5 && (x + y) % 2 != 0) {
                     piece = makePiece(PieceType.WHITE, x, y);
+                    
                 }
 
                 if (piece != null) {
@@ -45,18 +51,7 @@ public class CheckersMain extends Application {
 
         return root;
     }
-
-
     
-    public void start(Stage primaryStage) throws Exception {
-        Scene scene = new Scene(createContent());
-        primaryStage.setTitle("CheckersApp");
-        primaryStage.setScene(scene);
-        primaryStage.show();
+    private int toBoard(double pixel) {
+        return (int)(pixel + TILE_SIZE / 2) / TILE_SIZE;
     }
-
-    
-    public static void main(String[] args) {
-        launch(args);
-    }
-}
