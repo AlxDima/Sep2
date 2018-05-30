@@ -24,7 +24,7 @@ public class GameStat {
                          " WinGamesNo       INT    NOT NULL," +
                          " TotalPGamesNo      CHAR(15)   NOT NULL," +
                          " Winrate       CHAR(15)     NOT NULL," +
-                         " TotalPTime       DATE    NOT NULL)";
+                         " TotalPTime       CHAR(15)    NOT NULL)";
             stmt.executeUpdate(sql);
             stmt.close();
             c.close();
