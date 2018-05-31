@@ -19,10 +19,10 @@ public class Tile extends Rectangle {
     }
 
     public Tile(boolean light, int x, int y) {
-        setWidth(CheckersMain.TILE_SIZE);
-        setHeight(CheckersMain.TILE_SIZE);
+        setWidth(Board.TILE_SIZE);
+        setHeight(Board.TILE_SIZE);
 
-        relocate(x * CheckersMain.TILE_SIZE, y * CheckersMain.TILE_SIZE);
+        relocate(x * Board.TILE_SIZE, y * Board.TILE_SIZE);
 
         setFill(light ? Color.valueOf("#feb") : Color.valueOf("#582"));
     }

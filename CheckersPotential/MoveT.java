@@ -1,5 +1,5 @@
 
 
 public enum MoveT {
-    NONE, NORMAL, KILL, KING
+    NONE, NORMAL, KILL
 }
