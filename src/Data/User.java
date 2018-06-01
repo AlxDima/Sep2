@@ -22,8 +22,7 @@ public class User {
             String sql = "CREATE TABLE \"Game\".user " +
                          "(ID INT PRIMARY KEY     NOT NULL," +
                          " NAME           TEXT    NOT NULL, " +
-                         " ALIAS          TEXT    NOT NULL, " +
-                         " PWD            CHAR(8))";
+                         " ALIAS          TEXT    NOT NULL)";
             stmt.executeUpdate(sql);
             stmt.close();
             c.close();
@@ -31,6 +30,6 @@ public class User {
             System.err.println( e.getClass().getName()+": "+ e.getMessage() );
             System.exit(0);
           }
-          System.out.println("Database table ok");
+          System.out.println("Database created");
         }
    }

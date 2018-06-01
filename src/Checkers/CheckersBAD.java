@@ -24,6 +24,8 @@ public class CheckersBAD extends Applet {
 	 * used in the applet are defined as instance variables in the
 	 * CheckersCanvas class. The applet class gives them their visual appearance
 	 * and sets their size and positions.
+	 * dsdsdsdsdsd
+	 * 
 	 */
 
 	/**
@@ -32,8 +34,9 @@ public class CheckersBAD extends Applet {
 	private static final long serialVersionUID = 1L;
 
 	public void init() {
-
-		setLayout(null); // I will do the layout myself.
+	   setSize(500, 500);
+      setResizable(false);
+		setLayout(null); // I will do the layout myself555.
 
 		setBackground(new Color(0, 150, 0)); // Dark green background.
 
@@ -64,6 +67,12 @@ public class CheckersBAD extends Applet {
 		board.resignButton.setBounds(210, 120, 100, 30);
 		board.message.setBounds(0, 200, 330, 30);
 	}
+
+   private void setResizable(boolean b)
+   {
+      // TODO Auto-generated method stub
+      
+   }
 
 } // end class Checkers
 

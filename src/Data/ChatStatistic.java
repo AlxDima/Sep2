@@ -1,10 +1,11 @@
 package Data;
 
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
 
-public class Log {
+public class ChatStatistic {
    
       public static void main( String args[] )
         {
@@ -18,10 +19,9 @@ public class Log {
             System.out.println("Database open ok");
 
             stmt = c.createStatement();
-            String sql = "CREATE TABLE \"Game\".log " +
-                         "(Date       TIMESTAMP PRIMARY KEY     NOT NULL," +
-                         " LOG_ID     INT    NOT NULL, " +
-                         " File_Name  TEXT    NOT NULL)";
+            String sql = "CREATE TABLE \"Game\".chatstat " +
+                         "(UserId       INT PRIMARY KEY     NOT NULL," +
+                         " DailyLog       DATE    NOT NULL)";
             stmt.executeUpdate(sql);
             stmt.close();
             c.close();
@@ -29,6 +29,6 @@ public class Log {
             System.err.println( e.getClass().getName()+": "+ e.getMessage() );
             System.exit(0);
           }
-          System.out.println("Database table ok");
+          System.out.println("Table created");
         }
    }
