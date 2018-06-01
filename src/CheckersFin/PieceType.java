@@ -1,3 +1,4 @@
+package CheckersFin;
 public enum PieceType {
     RED(1), WHITE(-1);
 

@@ -1,3 +1,4 @@
+package CheckersFin;
 import javafx.scene.Group;
 import javafx.scene.Parent;
 import javafx.scene.layout.Pane;

@@ -1,3 +1,4 @@
+package CheckersFin;
 public class MoveR {
 
     private MoveT type;
