@@ -7,12 +7,13 @@ import java.sql.Statement;
 
 
 public class Select_from {
+   Connection c;
+   Statement stmt;
 
-
-public static void main( String args[] )
+public   Select_from(  )
      {
-       Connection c = null;
-       Statement stmt = null;
+        c = null;
+        stmt = null;
        try {
        Class.forName("org.postgresql.Driver");
          c = DriverManager
