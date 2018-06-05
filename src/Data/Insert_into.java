@@ -22,10 +22,11 @@ public class Insert_into {
             String user1 = "INSERT INTO \"Game\".user " + "VALUES (1, 'Alex D', 'Popeye')";
             String user2 = "INSERT INTO \"Game\".user " + "VALUES (2, 'Alex z', 'Pluto')" ;
             String user3= "INSERT INTO \"Game\".user " + "VALUES (3, 'Mihai B', 'MickeyMouse')" ;
-            String gamestat1 = "INSERT INTO \"Game\".gamestat " + "VALUES (1, 30, 30, '100%','10hours')";
-            String gamestat2 = "INSERT INTO \"Game\".gamestat " + "VALUES (2, 27, 54, '50%','15hours')";
-            String gamestat3 = "INSERT INTO \"Game\".gamestat " + "VALUES (3, 3, 30, '10%','8hours')";
-            stmt.executeUpdate(gamestat3);
+            String user4= "INSERT INTO \"Game\".user " + "VALUES (4, 'Lukas', 'Donald')" ;
+//            String gamestat1 = "INSERT INTO \"Game\".gamestat " + "VALUES (1, 30, 30, '100%','10hours')";
+//            String gamestat2 = "INSERT INTO \"Game\".gamestat " + "VALUES (2, 27, 54, '50%','15hours')";
+//            String gamestat3 = "INSERT INTO \"Game\".gamestat " + "VALUES (3, 3, 30, '10%','8hours')";
+            stmt.executeUpdate(user4);
 
         
       
