@@ -1,23 +1,35 @@
-package test;
+package View;
+import java.io.BufferedWriter;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+import Checkers.Board;
+import Data.Insert_into;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.*;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.ListView;
+import javafx.scene.control.Tab;
+import javafx.scene.control.TabPane;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 
-import java.io.*;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.Scanner;
-
-import Data.Insert_into;
-
-import java.lang.System;
-
 public class TestControler
 {
+	
+	String gameID = "Game ";
+	int number = 1;
    // system
 
    @FXML
@@ -75,13 +87,14 @@ public class TestControler
    @FXML
    private ListView listText22;
    @FXML
-   private ListView listText21;
+   private ListView<String> listText21;
    @FXML
    private TextArea listText24;
    @FXML
    private ListView listText25;
    @FXML
-   private Pane panelGame;
+   private ListView panelGame;
+   
    // administrator label + text fields + buttons + listview
    @FXML
    private Label lblUserList;
@@ -172,7 +185,22 @@ public class TestControler
    @FXML
    void createGame(ActionEvent event)
    {
-
+	   
+			 
+	   
+	  
+	   panelGame.setVisible(true);
+	   panelGame.getItems().add(Board.createContent());
+	   
+	   listText21.getItems().add(gameID + number);
+	   number++;
+	   
+	    
+	   
+	   
+	   
+	   
+	   
    }
 
    @FXML
@@ -184,7 +212,9 @@ public class TestControler
    @FXML
    void resignGame(ActionEvent event)
    {
-
+	   panelGame.setVisible(false);
+	   panelGame.getItems().removeAll(Board.createContent());
+	   
    }
 
    @FXML
